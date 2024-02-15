@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+ body {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #fff;
+ }
+
+
+ a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+ }
+
+ ul li {
+    list-style: none;
+ }
+
+ 
+
+ .container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    padding: 2rem 0;
+    background-color: #937754;
+
+ }
+
+ 
+ 
+  .container .header ul li a {
+    text-transform: capitalize;
+    transition: all .3s linear;
+
+  }
+
+  .container .header ul li a:hover{
+    color: #21201f;
+  }
+ 
+
+ .container .header .logo {
+    width: 15%;
+    margin: 0 3rem;
+ }
+
+ .container .header .logo img {
+    width: 100%;
+ }
+
+ .container .header ul {
+    width:40% ;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+
+ .container  {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    flex-direction: column;
+    background: url(../images/drew-coffman-1872.jpg) no-repeat center ;
+    background-size: cover;
+ }
+
+ 
+
+
+ .container .info {
+     width: 50%;
+     text-align: center;
+     position: relative;
+     z-index: 4;
+ }
+
+
+ .margin-bootom {
+    margin-bottom: 2rem;
+ }
+ .container .info p:first-child {
+   
+    font-size: 1.5rem;
+ }
+
+ .container  .info h2 {
+    
+    font-size: 5rem;
+    font-weight: 400;
+    
+ }
+
+  .container  .info .last { 
+    font-size: 1.5rem;
+    word-spacing: 1px;
+  }
+
+  .button button {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #fff;
+    transition: all .2s linear;
+    
+  }
+
+  .button .btn-1
+  {
+    margin-right: 1rem;
+  }
+
+  .button .btn-1 {
+    background-color: #937754;
+  }
+
+  .button .btn-2 {
+      background-color: transparent;
+      border: 1px solid #fff;
+  }
+
+  .button button:hover {
+    background-color: #fff;
+    color: black;
+  }
+
+  .container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+
+  .container-2
+  {
+   /* background-color: blue; */
+   width: 90%;
+   height: 100vh;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-evenly;
+   padding:5rem 0;
+   color: black;
+   
+  }
+
+  .container-2 .image {
+   width: 50%;
+   height: 100%;
+  }
+
+  .image img {
+   width: 100%;
+   height: 100%;
+  }
+
+  .container-2 .contain
+  {
+   width: 35%;
+  }
+
+  .container-2 .contain .para-1 {
+   font-weight: 500;
+   font-size: 1.5rem;
+  }
+
+  .container-2 .contain .para-2 {
+
+   color: #937754;
+   font-weight: 300;
+   /* word-spacing: 1px; */
+   line-height: 1.6;
+  }
+
+   .menu p span {
+   margin-right: 3rem ;
+  }
+
+
+  .menu p span:first-child i {
+   padding: 10px;
+   background-color: #937754;
+   color: #fff;
+   border-radius: 50%;
+  }
+
+ .menu p span:last-child {
+   font-weight: 300;
+  }
+
+  .section {
+     background-color: #f8f8f8;
+
+  }
+
+   h2{
+      font-size: 3rem;
+      font-weight: 500;
+  }
+
+  .section-2{
+    color: #21201f;
+    text-align: center;
+    margin: 5rem;
+  }
+
+  .section-2 p {
+      word-spacing: 1px;
+      font-weight: 300;
+      color: #937754;
+  }
+
+  .section-2 .gallary {
+   display: flex;
+   justify-content: space-around;
+   
+  }
+
+  .section-2 .gallary .one {
+    
+     width: 25%;
+   }
+
+.section-2 .gallary .one .image {
+width: 100%;
+}
+
+
+.section-2 .gallary .one .image img {
+   width: 100%;
+}
+
+.section-2 .gallary .one h3 {
+   font-weight: 500;
+   font-size: 2rem;
+}
+
+.section-2 .gallary .one p {
+   line-height: 1.9;
+   color: #937754;
+   font-weight: 300;
+}
+
+.contact-info {
+   color: #21201f;
+   display: flex;
+   justify-content: space-around;
+   background-color: #f8f8f8;
+   padding: 3rem;
+
+}
+
+.contact-info .info {
+   width: 40%;
+}
+
+.contact-info .image {
+   width: 50%;
+}
+
+.contact-info .image img {
+   width: 100%;
+}
+
+.contact-info  h3 {
+   font-size: 3rem;
+   font-weight: 400;
+}
+
+.contact-info .info p {
+    /* color: #937754; */
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.footer {
+   background-color: #403D38;
+   display: flex;
+   justify-content: space-around;
+   padding: 3rem;
+}
+
+.footer div {
+   width: 22%;
+}
+
+
+
+.footer h3 {
+
+   font-size: 1.5rem;
+   font-weight: 500;
+
+}
+
+.footer  p {
+   opacity: .5;
+}
+
+.footer p {
+   line-height: 1.7;
+}
+
+
+.footer i  {
+   padding-right: .5rem;
+}
+
+
+.footer div:not(:first-child) p
+{
+   padding-bottom: .5rem ;
+   border-bottom: 1px solid rgba(255, 255, 255, .5) ;
+}
+
+.foot {
+   background-color: #21201f;
+   padding: 2rem;
+}
+
+
+.foot .info {
+   width: 400px;
+   margin: auto;
+   /* background-color: red; */
+   text-align: center;
+}
+
+.foot .info .image {
+   width: 100%;
+}
+
+.foot .info .image img {
+   width: 100%;
+}
+
+.icon ul li {
+   display: inline-block;
+}
+
+.icon  ul li:not(:first-child){ 
+   margin-left: 2rem;
+   }
+
+
+
+   .icon ul li a {
+       background-color:#403D38;
+       padding: 10px ;
+       border-radius: 5px;
+       transition: all 1s ;
+   }
+
+ .icon ul li .first:hover {
+   background-color: blue;
+ }
+
+ .icon ul li .first-2:hover {
+    background-color: red;
+ }
+
+ .icon ul li .first-3:hover , .icon ul li .first-4:hover {
+    background-color: rgb(71, 107, 222);
+ }
+
+
+   .foot .info p {
+      color: #fff;
+      opacity: .5;
+   }
+
